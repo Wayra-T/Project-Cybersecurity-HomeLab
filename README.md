@@ -51,6 +51,8 @@ WMware Virtual Network Configuration:
 ![VMware Network Configuration ](images/VirtualNetworkEditor.png)
 
 ### **2. Virtual Machines**
+In this section, I’m listing all the virtual machines I set up for my HomeLab. Each one has a specific job, like managing the network, monitoring security events, or simulating attacks.
+
 
 
 - **SIEM Server:** 
