@@ -33,6 +33,7 @@ Here is the hardware and software setup for the system hosting the virtual envir
 This section covers the steps I followed to create and configure my SOC HomeLab environment.  
 It will also include **screenshots** for reference.
 
+
 ### **1. Network Topology**
 My HomeLab network topology consists of seven VLANs, which are detailed in the following diagram (with actual and future VMs):
 
@@ -50,9 +51,11 @@ WMware Virtual Network Configuration:
 
 ![VMware Network Configuration ](images/VirtualNetworkEditor.png)
 
+
 ### **2. Virtual Machines**
 In this section, I’m listing all the virtual machines I set up for my HomeLab. Each one has a specific job, like managing the network, monitoring security events, or simulating attacks.
 
+![VMware Home ](images/HomeLabVMs.png)
 
 
 - **SIEM Server:** 
