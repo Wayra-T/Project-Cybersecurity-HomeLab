@@ -34,7 +34,8 @@ This section covers the steps I followed to create and configure my SOC HomeLab 
 It will also include **screenshots** for reference.
 
 ### **1. Network Topology**
-My HomeLab topology consists of seven VLANs, which are detailed in the following diagram (with actual and future VMs):
+My HomeLab network topology consists of seven VLANs, which are detailed in the following diagram (with actual and future VMs):
+
 ![Network Topology](images/HomeLAB.png)
 
 - VLAN1 (Management - 10.0.1.0/24) hosts an Ubuntu VM that will be used to access and manage the firewall via its GUI.
@@ -49,16 +50,17 @@ WMware Virtual Network Configuration:
 
 ![VMware Network Configuration ](images/VirtualNetworkEditor.png)
 
-
 ### **2. Virtual Machines**
-- **SIEM Server:** (e.g., LimaCharlie, Wazuh, or Splunk)
-- **Attack Simulation:** (e.g., Kali Linux, Sliver C2)
+
+
+- **SIEM Server:** 
+- **Attack Simulation:** 
 - **Windows Endpoint:** Simulates user workstation
 - **Linux Server:** Hosting internal services
 
 
-### **4. Screenshots**
-*(Screenshots will be added after setup completion — examples could be VM dashboard, SIEM interface, detection alerts, etc.)*
+### **4. Upgrades**
+*(Screenshots will be added after setup completion — VM dashboard, SIEM interface, detection alerts, etc.)*
 
 ---
 
