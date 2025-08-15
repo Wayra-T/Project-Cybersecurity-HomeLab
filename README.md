@@ -46,9 +46,8 @@ My HomeLab topology consists of seven VLANs, which are detailed in the following
 - VLAN99 (Isolated LAN - 10.0.99.0/24) hosts FLARE and REMnux for safe malware analysis and reverse engineering in a fully isolated network.
 
 WMware Virtual Network Configuration:
-<image>
 
-
+![VMware Network Configuration ](images/VirtualNetworkEditor.png)
 
 
 ### **2. Virtual Machines**
