@@ -35,13 +35,21 @@ It will also include **screenshots** for reference.
 
 ### **1. Network Topology**
 My HomeLab topology consists of seven VLANs, which are detailed in the following diagram (with actual and future VMs):
-![Network Topology](images/NetworkTopology.png)
+![Network Topology](images/HomeLAB.png)
 
-- VLAN1 hosts an Ubuntu VM that will be used to access and manage the firewall via its GUI.
-- VLAN10 hosts two VMs (Kali Linux - Kali Linux Caldera). The idea is to simulate External Threat Actors.
-- VLAN20 
+- VLAN1 (Management - 10.0.1.0/24) hosts an Ubuntu VM that will be used to access and manage the firewall via its GUI.
+- VLAN10 (Malicious WAN - 10.0.10.0/24) hosts two VMs (Kali Linux - Kali Linux Caldera). The idea is to simulate External Threat Actors.
+- VLAN20 (Corporate LAN - 10.0.20.0/24) hosts three VMs (Win Server 2022 and two Win 10) simulating a Corporate LAN.
+- VLAN30 (Security LAN - 10.0.30.0/24) hosts Splunk, Wazuh, CSI Linux, and DFIR SANS for centralized security monitoring, analysis, and incident response in a controlled lab environment.
+- VLAN40 (Targets - 10.0.40.0/24) contains Metasploitable 2, Web for Pentester, and XVWA as vulnerable systems for penetration testing and exploit development.
+- VLAN50 (DMZ - 10.0.50.0/24)  runs Ubuntu Server to simulate public-facing services and test security controls in a demilitarized zone setup.
+- VLAN99 (Isolated LAN - 10.0.99.0/24) hosts FLARE and REMnux for safe malware analysis and reverse engineering in a fully isolated network.
 
-*(Insert diagram here — can be created using draw.io, Lucidchart, or even a hand-drawn scan)*
+WMware Virtual Network Configuration:
+<image>
+
+
+
 
 ### **2. Virtual Machines**
 - **SIEM Server:** (e.g., LimaCharlie, Wazuh, or Splunk)
@@ -49,11 +57,6 @@ My HomeLab topology consists of seven VLANs, which are detailed in the following
 - **Windows Endpoint:** Simulates user workstation
 - **Linux Server:** Hosting internal services
 
-### **3. Tools Used**
-- [Splunk](https://www.splunk.com/) – Log analysis & SIEM
-- [Wazuh](https://wazuh.com/) – Open-source SIEM & XDR
-- [Security Onion](https://securityonion.net/) – Network monitoring
-- [Kali Linux](https://www.kali.org/) – Penetration testing
 
 ### **4. Screenshots**
 *(Screenshots will be added after setup completion — examples could be VM dashboard, SIEM interface, detection alerts, etc.)*
