@@ -35,7 +35,11 @@ It will also include **screenshots** for reference.
 
 ### **1. Network Topology**
 My HomeLab topology consists of seven VLANs, which are detailed in the following diagram (with actual and future VMs):
+![Network Topology](images/NetworkTopology.png)
 
+- VLAN1 hosts an Ubuntu VM that will be used to access and manage the firewall via its GUI.
+- VLAN10 hosts two VMs (Kali Linux - Kali Linux Caldera). The idea is to simulate External Threat Actors.
+- VLAN20 
 
 *(Insert diagram here — can be created using draw.io, Lucidchart, or even a hand-drawn scan)*
 
