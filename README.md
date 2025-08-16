@@ -2,8 +2,7 @@
 
 ## 👋 Introduction
 Welcome to my **Cybersecurity HomeLab** project.  
-Someone once said, "Practice is infinitely superior to theory." Let's get to work: it's time to research and design my own homelab.
-SoBatistaCyber Guide: https://www.youtube.com/watch?v=sC6jEr8ox8g&list=PL_eQ4NSC2HGOrS1bHz4WTJ4Cbc2ie4RgP&index=1
+Someone once said, "Practice is infinitely superior to theory." Let's get to work; it's time to research and design my own homelab.
 
 This space documents the process of building and configuring a personal lab environment to simulate a **Security Operations Center (SOC)**.  
 The lab is designed for **hands-on learning** in threat detection, incident response, and security tool deployment.
@@ -12,6 +11,8 @@ The goal of this HomeLab is to:
 - Gain practical experience with SOC workflows
 - Practice using **SIEM**, **EDR**, and other security tools
 - Simulate real-world attack and defense scenarios
+
+SoBatistaCyber Guide: https://www.youtube.com/watch?v=sC6jEr8ox8g&list=PL_eQ4NSC2HGOrS1bHz4WTJ4Cbc2ie4RgP&index=1
 
 ---
 
