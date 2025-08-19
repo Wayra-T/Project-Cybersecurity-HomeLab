@@ -57,22 +57,20 @@ My HomeLab network topology consists of seven VLANs, which are detailed in the f
 <br>
 
 ### **2. Virtual Machines**
-In this section, I’m listing all the virtual machines I set up for my HomeLab. Each one has a specific job, like managing the network, monitoring security events, or simulating attacks. Although the links provided above focus on development using VirtualBox, I prefer VMware Workstation for its better features, including higher performance and reliability.
-
+In this section, I’m listing all the virtual machines I set up for my HomeLab. Each one has a specific job, like managing the network, monitoring security events, or simulating attacks. Although the links provided above focus on deployment using VirtualBox, I prefer VMware Workstation for its better features, including higher performance and reliability.
 ![VMware Home ](images/HomeLabVMs.png)
 
 <br>
 <br>
-<p align="center"><b>pfSense Firewall</b></p>
+<p align="center"><b># pfSense Firewall #</b></p>
+This VM is equipped with WAN, LAN, and multiple VLAN interfaces for segmented network security. Perfect for messing around with firewalls, spotting intrusions, and keeping stuff isolated. Further configurations such as interface names, rules, and other settings are managed through a web browser on an Ubuntu Machine, which is used to oversee the pfSense firewall.
 
 ![pfSense VM ](images/PfSenseFirewall.png)
 
-This VM is equipped with WAN, LAN, and multiple VLAN interfaces for segmented network security. Perfect for messing around with firewalls, spotting intrusions, and keeping stuff isolated. Further configurations such as interface names, rules, and other settings are managed through a web browser on an Ubuntu Machine, which is used to oversee the pfSense firewall.
-
 <br>
-<p align="center"><b>Ubuntu Management</b></p>
+<p align="center"><b># Ubuntu Management #</b></p>
 
-
+![Ubuntu Management VM ](images/UbuntuManagement0.png)
 
 
 
