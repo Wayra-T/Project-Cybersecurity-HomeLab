@@ -76,7 +76,9 @@ The Ubuntu VM (Management) serves as the central control hub for managing the pf
 pfSense dashboard displaying the firewall status, system info, firewall logs and interfaces details.
 ![pfSense Dashboard ](images/UbuntuManagement.png)
 
- **Firewall Rules:** 
+<br>
+
+**Firewall Rules:**  
  
 The Management interface allows secure admin access to the pfSense firewall via HTTPS, HTTP, or SSH. Outbound traffic from the Management VLAN is unrestricted for updates and monitoring. Access from other VLANs is blocked by default, isolating the Ubuntu Management VM and firewall management plane for security.
 ![Management Rules ](images/ManagementRules.png)
