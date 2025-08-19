@@ -14,6 +14,8 @@ The goal of this HomeLab is to:
 
 SoBatistaCyber Guide: https://www.youtube.com/watch?v=sC6jEr8ox8g&list=PL_eQ4NSC2HGOrS1bHz4WTJ4Cbc2ie4RgP&index=1
 
+David Varghese Blog: https://blog.davidvarghese.net/posts/building-home-lab-part-1/
+
 ---
 
 ## 🏠 Host & Hypervisor Information
@@ -31,8 +33,7 @@ Here is the hardware and software setup for the system hosting the virtual envir
 ---
 
 ## ⚙️ Lab Setup & Configuration
-This section covers the steps I followed to create and configure my SOC HomeLab environment.  
-It will also include **screenshots** for reference.
+This section covers the steps I followed to create and configure my SOC HomeLab environment. It will also include **screenshots** for reference.
 
 
 ### **1. Network Topology**
@@ -47,16 +48,38 @@ My HomeLab network topology consists of seven VLANs, which are detailed in the f
 - VLAN40 (Targets - 10.0.40.0/24) contains Metasploitable 2, Web for Pentester, and XVWA as vulnerable systems for penetration testing and exploit development.
 - VLAN50 (DMZ - 10.0.50.0/24)  runs Ubuntu Server to simulate public-facing services and test security controls in a demilitarized zone setup.
 - VLAN99 (Isolated LAN - 10.0.99.0/24) hosts FLARE and REMnux for safe malware analysis and reverse engineering in a fully isolated network.
-
-WMware Virtual Network Configuration:
+<br>
+  
+**WMware Virtual Network Configuration:**
 
 ![VMware Network Configuration ](images/VirtualNetworkEditor.png)
 
+<br>
 
 ### **2. Virtual Machines**
-In this section, I’m listing all the virtual machines I set up for my HomeLab. Each one has a specific job, like managing the network, monitoring security events, or simulating attacks.
+In this section, I’m listing all the virtual machines I set up for my HomeLab. Each one has a specific job, like managing the network, monitoring security events, or simulating attacks. Although the links provided above focus on development using VirtualBox, I prefer VMware Workstation for its better features, including higher performance and reliability.
 
 ![VMware Home ](images/HomeLabVMs.png)
+
+<br>
+<br>
+<p align="center"><b>pfSense Firewall</b></p>
+
+![pfSense VM ](images/PfSenseFirewall.png)
+
+This VM is equipped with WAN, LAN, and multiple VLAN interfaces for segmented network security. Perfect for messing around with firewalls, spotting intrusions, and keeping stuff isolated. Further configurations such as interface names, rules, and other settings are managed through a web browser on an Ubuntu Machine, which is used to oversee the pfSense firewall.
+
+<br>
+<p align="center"><b>Ubuntu Management</b></p>
+
+
+
+
+
+
+
+
+
 
 
 - **SIEM Server:** 
