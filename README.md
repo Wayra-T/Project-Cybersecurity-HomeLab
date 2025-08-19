@@ -81,11 +81,11 @@ pfSense dashboard displaying the firewall status, system info, firewall logs and
 The Management interface allows secure admin access to the pfSense firewall via HTTPS, HTTP, or SSH. Outbound traffic from the Management VLAN is unrestricted for updates and monitoring. Access from other VLANs is blocked by default, isolating the Ubuntu Management VM and firewall management plane for security.
 ![Management Rules ](images/ManagementRules.png)
 
-The MaliciousWAN interface controls traffic from potential untrusted sources. Rules allow connections to the Internet and permit communication to internal VLANs (Corporate, Targets, and DMZ subnets).
+The MaliciousWAN interface controls traffic to and from potential untrusted sources. Rules allow connections to the Internet and permit communication to internal VLANs (Corporate, Targets, and DMZ subnets).
 ![MaliciousWAN Rules ](images/MaliciousWanRule.png)
 
-
-
+The CORPORATELAN interface manages traffic to and from the organization’s trusted internal corporate network. Rules eventually allow connections to the Internet and permit communications to internal VLANs (Security and pretending "External Malicious" subnets).
+![Corporate Rules ](images/CorporateRules.png)
 
 
 <br>
