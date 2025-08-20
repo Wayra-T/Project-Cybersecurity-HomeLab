@@ -83,11 +83,18 @@ pfSense dashboard displaying the firewall status, system info, firewall logs and
 The Management interface allows secure admin access to the pfSense firewall via HTTPS, HTTP, or SSH. Outbound traffic from the Management VLAN is unrestricted for updates and monitoring. Access from other VLANs is blocked by default, isolating the Ubuntu Management VM and firewall management plane for security.
 ![Management Rules ](images/ManagementRules.png)
 
-The MaliciousWAN interface controls traffic to and from potential untrusted sources. Rules allow connections to the Internet and permit communication to internal VLANs (Corporate, Targets, and DMZ subnets).
+The MaliciousWAN interface controls traffic to and from potential untrusted sources. Rules allow connections to the Internet and permit communication to internal VLANs (Corporate, Targets, and DMZ subnets). Traffic between hosts within the subnet is allowed.
 ![MaliciousWAN Rules ](images/MaliciousWanRule.png)
 
-The CORPORATELAN interface manages traffic to and from the organization’s trusted internal corporate network. Rules eventually allow connections to the Internet and permit communications to internal VLANs (Security and pretending "External Malicious" subnets).
+The CORPORATELAN interface manages traffic to and from the organization’s trusted internal corporate network. Rules permit communications to internal VLANs (Security and pretending "External Malicious" subnets) and access to the Internet is disable. Traffic between hosts within the subnet is allowed.
 ![Corporate Rules ](images/CorporateRules.png)
+
+
+The SECURITY interface rules restrict traffic by blocking communications to the Malicious WAN, Management, and WAN subnets. Access to specific web services is permitted only when enabled for updates. Traffic from the SECURITY subnet to other internal subnets is allowed.
+![Security Rules ](images/SecurityRules.png)
+
+The TARGETS interface rules permit traffic within internal VLANs (VLAN 10, 30, and 40). Access to specific web services is permitted only when enabled for updates. Traffic between hosts within the subnet is allowed.
+![Target Rules ](images/TargetRules.png)
 
 
 <br>
