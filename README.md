@@ -115,6 +115,8 @@ The KaliLAB VM is placed in the Malicious WAN to simulate an external attacker. 
 <p align="center"><b># Kali - Caldera #</b></p>
 The Kali Caldera VM, running in the Malicious WAN, emulates adversary behavior using automated attack frameworks. It represents threat actors performing persistence, privilege escalation, and lateral movement against systems in other VLANs. This VM provides controlled red-team style testing to evaluate how the lab environment detects and responds to real-world threats.
 
+![Kali Caldera VM ](images/KaliCaldera0.png)
+
 ![Kali Caldera VM ](images/KaliCaldera.png)
 
 
