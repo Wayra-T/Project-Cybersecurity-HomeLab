@@ -89,17 +89,40 @@ The MaliciousWAN interface controls traffic to and from potential untrusted sour
 The CORPORATELAN interface manages traffic to and from the organization’s trusted internal corporate network. Rules permit communications to internal VLANs (Security and pretending "External Malicious" subnets) and access to the Internet is disable. Traffic between hosts within the subnet is allowed.
 ![Corporate Rules ](images/CorporateRules.png)
 
-
 The SECURITY interface rules restrict traffic by blocking communications to the Malicious WAN, Management, and WAN subnets. Access to specific web services is permitted only when enabled for updates. Traffic from the SECURITY subnet to other internal subnets is allowed.
 ![Security Rules ](images/SecurityRules.png)
 
 The TARGETS interface rules permit traffic within internal VLANs (VLAN 10, 30, and 40). Access to specific web services is permitted only when enabled for updates. Traffic between hosts within the subnet is allowed.
 ![Target Rules ](images/TargetRules.png)
 
+The DMZ interface rules allow Internet access and communication with VLAN10 (MaliciousWAN), VLAN30 (Security), and intra-VLAN50 traffic.
+![DMZ Rules ](images/DMZRules.png)
+
+The IsolatedLAN allows only SSH access to the CSI Linux VM (10.0.30.21) in the Security subnet for controlled file transfers and forensic analysis. All other inbound and outbound traffic from the isolated environment is strictly blocked to maintain containment.
+![Isolated Rules ](images/IsolatedRules.png)
+
+In the homelab, network segmentation creates a controlled setup by separating traffic and applying rules to each VLAN. This improves security, lowers risks of attacks, and makes testing and analysis safer and more reliable.
 
 <br>
 <br>
+<p align="center"><b># KaliLAB #</b></p>
+The KaliLAB machine represents an external malicious actor within the Malicious WAN. It provides a controlled environment to simulate attacks and penetration testing. It is also used as an external entity to perform vulnerability assessments, testing the defenses of the homelab network under realistic attack conditions.
+![KaliLAB VM ](images/KaliLinux.png)
 
+<br>
+<br>
+<p align="center"><b># KaliLAB #</b></p>
+
+
+
+
+
+
+
+
+
+<br>
+<br>
 - **SIEM Server:** 
 - **Attack Simulation:** 
 - **Windows Endpoint:** Simulates user workstation
