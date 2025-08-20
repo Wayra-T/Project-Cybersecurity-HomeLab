@@ -106,15 +106,16 @@ In the homelab, network segmentation creates a controlled setup by separating tr
 <br>
 <br>
 <p align="center"><b># KaliLAB #</b></p>
-The KaliLAB machine represents an external malicious actor within the Malicious WAN. It provides a controlled environment to simulate attacks and penetration testing. It is also used as an external entity to perform vulnerability assessments, testing the defenses of the homelab network under realistic attack conditions.
+The KaliLAB VM is placed in the Malicious WAN to simulate an external attacker. It represents threat actors attempting to exploit vulnerabilities and compromise systems in other VLANs, such as the Corporate, Targets or DMZ. Besides malicious activities, it is also used for vulnerability assessments and penetration testing.
+
 ![KaliLAB VM ](images/KaliLinux.png)
 
 <br>
 <br>
-<p align="center"><b># KaliLAB #</b></p>
+<p align="center"><b># Kali - Caldera #</b></p>
+The Kali Caldera VM, running in the Malicious WAN, emulates adversary behavior using automated attack frameworks. It represents threat actors performing persistence, privilege escalation, and lateral movement against systems in other VLANs. This VM provides controlled red-team style testing to evaluate how the lab environment detects and responds to real-world threats.
 
-
-
+![Kali Caldera VM ](images/KaliCaldera.png)
 
 
 
