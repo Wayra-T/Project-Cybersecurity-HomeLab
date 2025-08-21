@@ -155,7 +155,7 @@ CSI Linux is used as a digital forensics and OSINT workstation. It provides tool
 <p align="center"><b># DFIR SANS #</b></p>
 The DFIR SANS VM is focused on digital forensics and incident response. It includes forensic imaging, timeline analysis, and malware examination tools. I'll use it to replicate professional investigation processes, analyzing compromised systems and practicing evidence handling in line with DFIR methodologies.
 
-![DFIR SANS VM ](images/DFIRSANSForensicsVM.png)
+![DFIR SANS VM ](images/DFIRSANSForsensicsVM.png)
 
 <br>
 <br>
@@ -183,23 +183,17 @@ These vulnerable web applications and operating systems are intentionally insecu
 ![XVWA VM ](images/XVWAvm.png)
 
 
-
+After lots of fun and troubleshooting, the lab is finally ready. I kept the explanation concise, leaving out setup steps since they’re covered in the provided links and reinforced by my Cert IV and Advanced Diploma labs. The next stage is deploying Wazuh as a SIEM server on Ubuntu. With snapshots secured, I’m ready to experiment and learn more!
 <br>
 <br>
-- **SIEM Server:** 
-- **Attack Simulation:** 
-- **Windows Endpoint:** Simulates user workstation
-- **Linux Server:** Hosting internal services
 
-
-### **4. Upgrades**
+### **3. Upgrades**
 *(Screenshots will be added after setup completion — VM dashboard, SIEM interface, detection alerts, etc.)*
 
 ---
 
 ## 📜 Future Plans
 - Install Wazuh
-- Rotate VMs included in the Target VLAN
 - Expand lab to include Splunk
 
 ---
