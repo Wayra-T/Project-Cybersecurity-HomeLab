@@ -89,7 +89,7 @@ The MaliciousWAN interface controls traffic to and from potential untrusted sour
 The CORPORATELAN interface manages traffic to and from the organization’s trusted internal corporate network. Rules permit communications to internal VLANs (Security and pretending "External Malicious" subnets) and access to the Internet is disable. Traffic between hosts within the subnet is allowed.
 ![Corporate Rules ](images/CorporateRules.png)
 
-The SECURITY interface rules restrict traffic by blocking communications to the Malicious WAN, Management, and WAN subnets. Access to specific web services is permitted only when enabled for updates. Traffic from the SECURITY subnet to other internal subnets is allowed.
+The SECURITY interface rules restrict traffic by blocking communications to the Malicious WAN, Management, and WAN subnets. Access to specific web services is permitted only when enabled for upgrades, tool installation, and for accessing online malware analysis services. Traffic from the SECURITY subnet to other internal subnets is allowed.
 ![Security Rules ](images/SecurityRules.png)
 
 The TARGETS interface rules permit traffic within internal VLANs (VLAN 10, 30, and 40). Access to specific web services is permitted only when enabled for updates. Traffic between hosts within the subnet is allowed.
@@ -120,7 +120,67 @@ The Kali Caldera VM, running in the Malicious WAN, emulates adversary behavior u
 ![Kali Caldera VM ](images/KaliCaldera.png)
 
 
+<br>
+<br>
+<p align="center"><b># Win Server 2022 - Win 10 Workstations#</b></p>
+I configured a Windows Server 2022 VM as the Domain Controller to manage Active Directory services. Two Windows 10 Pro workstations were joined to this domain for testing authentication and policies. To practice security hardening, I intentionally left the AD environment vulnerable by weakening default settings, allowing me to explore and later apply remediation steps.
 
+![WinServer VM ](images/WindowServer2022.png)
+
+![Win10 Workstation VM ](images/Win10Workstation.png)
+
+<br>
+<br>
+<p align="center"><b># Ubuntu Server #</b></p>
+This VM is placed in the DMZ to host services accessible from outside the network. It simulates a real-world perimeter server, allowing me to practice configuring security controls, monitoring exposed services, and testing firewall and intrusion detection rules in a controlled environment.
+
+![Ubuntu Server VM ](images/UbuntuServer.png)
+
+<br>
+<br>
+<p align="center"><b># Ubuntu - Wazuh #</b></p>
+Ubuntu VM is configured as a security monitoring host where Wazuh will be installed. It collects and analyzes logs from the network, helping detect threats, monitor system health, and ensure compliance. This VM serves as the central point for security visibility and event correlation in the lab environment.
+
+![Ubuntu - Wazuh VM ](images/UbuntuWazuh.png)
+
+<br>
+<br>
+<p align="center"><b># CSI Linux #</b></p>
+CSI Linux is used as a digital forensics and OSINT workstation. It provides tools for threat intelligence, cryptocurrency tracking, and case management. In my lab, I use it to simulate analyst workflows, collect evidence, and practice open-source investigations for incident response training.
+
+![CSI Linux VM ](images/CSILinuxVM.png)
+
+<br>
+<br>
+<p align="center"><b># DFIR SANS #</b></p>
+The DFIR SANS VM is focused on digital forensics and incident response. It includes forensic imaging, timeline analysis, and malware examination tools. I'll use it to replicate professional investigation processes, analyzing compromised systems and practicing evidence handling in line with DFIR methodologies.
+
+![DFIR SANS VM ](images/DFIRSANSForensicsVM.png)
+
+<br>
+<br>
+<p align="center"><b># Flare #</b></p>
+Flare VM is a Windows-based reverse engineering and malware analysis environment. It contains debuggers, disassemblers, and network analysis tools. In the lab, I'll use it to analyze malware samples, understand malicious behavior, and test defensive strategies safely within an isolated environment.
+
+![Flare VM ](images/FlareVM.png)
+
+<br>
+<br>
+<p align="center"><b># REMnux #</b></p>
+REMnux is a Linux toolkit for malware analysis and reverse engineering. It offers unpackers, emulators, and network forensics utilities. I'll use it alongside Flare VM to perform static and dynamic analysis, examine malicious traffic, and practice dissecting suspicious executables and scripts.
+
+![REMnux VM ](images/REMnuxVM.png)
+
+<br>
+<br>
+<p align="center"><b># Metasploitable 2, Web for Pentester, XVWA #</b></p>
+These vulnerable web applications and operating systems are intentionally insecure for penetration testing. In the lab, I'll use them to practice exploiting common vulnerabilities like SQL injection, XSS, and weak configurations, building offensive skills and improving my understanding of web application security flaws.
+
+![Metasploitable 2 VM ](images/MetasploitableVM.png)
+
+![Web for Pentester VM ](images/WebForPentestVM.png)
+
+![XVWA VM ](images/XVWAvm.png)
 
 
 
