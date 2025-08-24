@@ -2,7 +2,7 @@
 
 ## 👋 Introduction
 Welcome to my **Cybersecurity HomeLab** project.  
-Someone once said, "Practice is infinitely superior to theory." Let's get to work; it's time to research and design my own homelab.
+As someone once said, "Practice is infinitely superior to theory." Now, it's time for me to research and design my own homelab.
 
 This space documents the process of building and configuring a personal lab environment to simulate a **Security Operations Center (SOC)**.  
 The lab is designed for **hands-on learning** in threat detection, incident response, and security tool deployment.
